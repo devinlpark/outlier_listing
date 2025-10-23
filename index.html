@@ -402,6 +402,76 @@
             padding-top: 10px;
             border-top: 1px solid #D4AF37;
         }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 10px;
+            }
+            
+            .product-section {
+                padding: 20px;
+            }
+            
+            .top-section {
+                flex-direction: column;
+            }
+            
+            .left-column {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .book-cover img {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .blocks-container {
+                grid-template-columns: repeat(3, 60px);
+                justify-content: center;
+            }
+            
+            .recommendation h3,
+            .product-details h3 {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 20px;
+            }
+            
+            .blocks-container {
+                grid-template-columns: repeat(2, 60px);
+                justify-content: center;
+            }
+            
+            .block {
+                width: 55px;
+                height: 55px;
+                font-size: 8px;
+            }
+            
+            .product-details,
+            .recommendation-item {
+                padding: 12px;
+            }
+            
+            .quote-box {
+                padding: 15px;
+            }
+            
+            .quote-text {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
